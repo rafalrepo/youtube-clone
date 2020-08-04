@@ -1,0 +1,32 @@
+.siedbar__smallLink{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: #303030;
+    font-weight: 400;
+    text-decoration: none;
+    height: 60px;
+}
+
+.siedbar__smallLink.selected:hover,
+.siedbar__smallLink:hover{
+    background-color: rgba(204,204,204, 0.3);
+}
+
+.siedbar__smallLink .siedbar__icon{
+    margin-right: 0;
+    margin-bottom: 5px;
+}
+
+.selected .siedbar__icon{
+    color: #ff0000 !important; 
+    font-size: 22px !important;
+    opacity: 1;
+}
+
+.selected.siedbar__smallLink{
+    background-color: transparent;
+    color: #ff0000 !important; 
+}

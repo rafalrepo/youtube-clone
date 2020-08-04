@@ -6,8 +6,6 @@ import '../css/videotile.css';
 
 const VideoTile = ({ movie }) => {
 
-    console.log(movie);
-
     return(
         <article className="video">
             <div className="video__img">

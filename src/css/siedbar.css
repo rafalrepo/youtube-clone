@@ -1,6 +1,29 @@
 .siedbar{
-    flex: 0.2;
     margin-top: 10px;
+    height: calc(100vh - 70px);
+    position: sticky;
+    top: 70px; 
+}
+
+.siedbar--scrollBar{
+    overflow-y: scroll;
+}
+
+.siedbar--scrollBar::-webkit-scrollbar {
+    width: 0;
+}
+
+.siedbar--scrollBar:hover::-webkit-scrollbar{
+    width: 8px;
+}
+
+.siedbar--scrollBar::-webkit-scrollbar-track {
+    background: none;
+}
+   
+.siedbar--scrollBar::-webkit-scrollbar-thumb:hover,
+.siedbar--scrollBar::-webkit-scrollbar-thumb {
+    background: rgba(96,96,96, 0.3); 
 }
 
 hr {

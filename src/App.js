@@ -12,15 +12,15 @@ import reducer, { initialState } from './context/reducer'
 function App() {
   return (
     <Router>
-      <div className="App">
-          <Header />
-          <main className="main">
-            <Siedbar />
-            <VideoProvider reducer={reducer} initialState={initialState}>
+       <VideoProvider reducer={reducer} initialState={initialState}>
+        <div className="App">
+            <Header />
+            <main className="main">
+              <Siedbar />
               <Content />
-            </VideoProvider>
-          </main>
-      </div>
+            </main>
+        </div>
+      </VideoProvider>
     </Router>
   );
 }

@@ -6,15 +6,20 @@ import AppsRoundedIcon from '@material-ui/icons/AppsRounded';
 import NotificationsSharpIcon from '@material-ui/icons/NotificationsSharp';
 import Avatar from '@material-ui/core/Avatar';
 import '../css/header.css';
+import { useVideoContext } from '../context/VideoContext';
 
 function Header() {
+
+    const [{ toggleSiedbar } , dispatch] = useVideoContext();
 
     const logoUrl = "https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg";
 
     return (
         <header className="header">
             <div className="header__brand">
-                <MenuSharpIcon className="header__icon"/>
+                <button className="header__siedbarBtn" onClick={() => dispatch({ type: 'TOGGLE_SIEDBAR'})}>
+                    <MenuSharpIcon className="header__icon"/>
+                </button>
                 <img src={logoUrl} />
             </div>
             <div className="header__search">

@@ -4,6 +4,10 @@
     align-items: center;
     padding: 20px;
     height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #ffffff;
 }
 
 .header__brand {
@@ -15,12 +19,42 @@
     height: 24px;
 }
 
+.header__siedbarBtn{
+    background: none;
+    border: 0;
+    margin-right: 25px;
+    position: relative;
+}
+
+.header__siedbarBtn:focus,
+.header__siedbarBtn:hover,
+.header__siedbarBtn:active{
+    outline: none;
+}
+
+.header__siedbarBtn:focus::after{
+    content: '';
+    position: absolute;
+    display: block;
+    height: 40px;
+    width: 40px;
+    top: -25%;
+    left: -35%;
+    border-radius: 50%;
+    background-color: rgba(204,204,204, 0.5);
+    z-index: -1;
+}
+
 .header__icon{
     color: #606060;
     width: 24px;
     height: 24px;
-    margin-right: 25px;
     cursor: pointer;
+    margin-right: 25px;
+}
+
+.header__siedbarBtn .header__icon {
+    margin-right: 0;
 }
 
 .header__search{
