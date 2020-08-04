@@ -1,0 +1,44 @@
+.video {
+    width: 245px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+.video__img {
+    width: 100%;
+    height: 142px;
+}
+
+.video__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video__content {
+    display: flex;
+    padding: 15px 0;
+}
+
+.video__avatar {
+    flex: 0.2;
+}
+
+.video__info {
+    flex: 0.8;
+    padding-right: 15px;
+}
+
+.video__info h4{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 5px;
+}
+
+.video__info p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #606060;
+}   

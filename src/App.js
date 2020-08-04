@@ -6,6 +6,8 @@ import './App.css';
 import Header from './components/Header';
 import Siedbar from './components/Siedbar';
 import Content from './components/Content';
+import { VideoProvider } from './context/VideoContext';
+import reducer, { initialState } from './context/reducer'
 
 function App() {
   return (
@@ -14,9 +16,10 @@ function App() {
           <Header />
           <main className="main">
             <Siedbar />
-            <Content />
+            <VideoProvider reducer={reducer} initialState={initialState}>
+              <Content />
+            </VideoProvider>
           </main>
-          {/* <h1>youtube clone </h1> */}
       </div>
     </Router>
   );

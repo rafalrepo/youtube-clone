@@ -9,3 +9,8 @@
     font-weight: 500;
     margin-bottom: 15px;
 }
+
+.content__main {
+    display: flex;
+    flex-wrap: wrap;
+}
