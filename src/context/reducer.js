@@ -19,6 +19,15 @@ const reducer = (state = initialState, action) => {
                 toggleSiedbar: !state.toggleSiedbar
             }
         }
+        // case 'SEARCH': {
+        //     console.log(action.payload);
+        //     const newMovies = data.filter(movie => (movie.title.indexOf(action.payload) >- '-1' || movie.channel.indexOf(action.payload) >- '-1'));
+        //     console.log();
+        //     return {
+        //         ...state,
+        //         movies: action.payload ? newMovies : data,
+        //     }
+        // }
         default:
             return state;
     }

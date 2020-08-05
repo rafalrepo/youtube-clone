@@ -24,8 +24,6 @@ const Siedbar = () => {
 
     const [{ toggleSiedbar } , dispatch] = useVideoContext();
 
-    console.log(toggleSiedbar);
-
     return(
         <div className={!toggleSiedbar ? 'siedbar siedbar--scrollBar' : 'siedbar'} style={{flex: !toggleSiedbar ? '0.2' : '0.05', overflow: toggleSiedbar ?? 'hidden'}}>
             {!toggleSiedbar ? 
